@@ -8,7 +8,7 @@ interface Props {
   reset: () => void;
 }
 
-const ErrorComponent = ({ error, reset }: Props) => {
+const Error = ({ error, reset }: Props) => {
   return (
     <div>
       <p>{`Something went wrong. ${error.message}`}</p>
@@ -17,4 +17,4 @@ const ErrorComponent = ({ error, reset }: Props) => {
   );
 };
 
-export default ErrorComponent;
+export default Error;

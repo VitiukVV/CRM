@@ -1,8 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
+// import Button from './Button';
+import dynamic from 'next/dynamic';
 import Button from './Button';
-import dynamic, { noSSR } from 'next/dynamic';
 const CompanyFormModal = dynamic(() => import('./CompanyFormModal'), {
   ssr: false,
 });
